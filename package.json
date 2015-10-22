@@ -1,0 +1,20 @@
+{
+  "name": "angular",
+  "version": "1.0.0",
+  "description": "angular and node alongside",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Evgeni vasilev",
+  "license": "ISC",
+  "devDependencies": {
+    "connect": "^3.4.0",
+    "http-server": "^0.8.5",
+    "serve-static": "^1.10.0"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "jade": "^1.11.0"
+  }
+}

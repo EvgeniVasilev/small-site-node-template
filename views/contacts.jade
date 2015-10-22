@@ -1,0 +1,77 @@
+doctype html
+html
+  head    
+    title Contact Us Page   
+    script(type="text/javascript" src="./jquery.js")		
+    script(type="text/javascript" src="./bootstrap/dist/js/bootstrap.js")    
+    link(rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css")
+    link(rel="stylesheet" type="text/css" href="./css/custom.css")  	
+  body
+      nav(class="navbar, navbar-default")
+         div(class="container-fluid") 
+            div(class="navbar-header")
+               button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
+                     span(class="sr-only") Toggle Navigation
+                     span(class="icon-bar")		
+                     span(class="icon-bar") 
+                     span(class="icon-bar")
+               a(class="navbar-brand" href="#") Project name
+            div(id="navbar" class="navbar-collapse collapse")
+               ul(class="nav navbar-nav")
+                 li: a(href="/") Home
+                 li: a(href="/about") About
+                 li(class="active"): a(href="/contacts") Contacs
+                 li(class="dropdown")
+                   a(href="#" clasa="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false") Dropdown
+                    span(class="caret")
+                   ul(class="dropdown-menu")
+                     li: a(href="#") Action
+                     li: a(href="#") Another Action
+                     li: a(href="#") Yet Another Action					 
+         // jumbotron
+        div(class="container-fluid")
+           h1: small Contacts Us Page		
+           div(class="row")
+              form(class="form col-lg-5")
+                  div(class="form-group")
+                     label(class="label label-primary" for="f_name") First Name: 
+                     p					 
+                     input(
+					 type="text"
+					 class="form-control"
+					 name="f_name"
+					 id="f_name"
+					 )
+                  div(class="form-group")
+                     label(class="label label-primary" for="s_name") Second Name: 
+                     p					 
+                     input(
+					 type="text"
+					 class="form-control"
+					 name="s_name"
+					 id="s_name"
+					 )
+                  div(class="form-group")
+                     label(class="label label-primary" for="email") E-mail: 
+                     p					 
+                     input(
+					 type="email"
+					 class="form-control"
+					 name="email"
+					 id="email"
+					 )
+                   div(class="form-group")
+                      label(class="label label-primary" for="message") Message: 
+                     p				   
+                      textarea(
+					  class="form-control"
+					  name="message"
+					  id="message"
+					  )
+                    div(class="form-group")
+                       input(
+					   type="submit"
+					   class="btn btn-danger form-control"
+					   value="Send Message"
+					   )
+             

@@ -1,0 +1,23 @@
+body {
+	background-color: #fbfdfd;
+}
+.in-jumbo {
+	text-align: justify;
+	font-size: 19px;
+	text-indent: 35px;
+}
+
+p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	text-align: justify;
+	text-indent: 35px;
+	color: rgb(34,34,34)
+}
+
+h1>small{
+	color: rgb()34,34,34;
+	text-decoration: underline;
+	display: block;
+	margin: 0 0 45px 0;
+}
