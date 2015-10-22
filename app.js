@@ -11,7 +11,7 @@ app.set("view engine", "jade");
 // to be procesed
 app.use(express.static(__dirname + "/public"));
 
-// ROUES SET UP
+// ROUTES SET UP
 // home page
 app.get("/", function (req, res) {
 	"use strict";
@@ -21,7 +21,7 @@ app.get("/", function (req, res) {
 app.get("/about", function (req, res) {
 	res.render("about");
 })
-// contact page
+// contacts page
 app.get("/contacts", function (req, res) {
 	res.render("contacts");
 })
