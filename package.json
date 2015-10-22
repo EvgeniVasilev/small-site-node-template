@@ -1,7 +1,7 @@
 {
   "name": "Small Site in Node.js",
   "version": "1.0.0",
-  "description": "small site template: consists of three pages - Home, About Us, Contacts; bootsrap layout",
+  "description": "small site template: consists of three pages - Home, About Us, Contacts; bootstrap layout",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
