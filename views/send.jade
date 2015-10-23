@@ -1,0 +1,37 @@
+doctype html
+html
+  head    
+    title Contact Us Page   
+    script(type="text/javascript" src="./jquery.js")		
+    script(type="text/javascript" src="./bootstrap/dist/js/bootstrap.js")    
+    link(rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css")
+    link(rel="stylesheet" type="text/css" href="./css/custom.css")  	
+  body
+      nav(class="navbar, navbar-default")
+         div(class="container-fluid") 
+            div(class="navbar-header")
+               button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
+                     span(class="sr-only") Toggle Navigation
+                     span(class="icon-bar")		
+                     span(class="icon-bar") 
+                     span(class="icon-bar")
+               a(class="navbar-brand" href="#") Project name
+            div(id="navbar" class="navbar-collapse collapse")
+               ul(class="nav navbar-nav")
+                 li: a(href="/") Home
+                 li: a(href="/about") About
+                 li(class="active"): a(href="/contacts") Contacs
+                 li(class="dropdown")
+                   a(href="#" clasa="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false") Dropdown
+                    span(class="caret")
+                   ul(class="dropdown-menu")
+                     li: a(href="#") Action
+                     li: a(href="#") Another Action
+                     li: a(href="#") Yet Another Action		
+     div(class="container-fluid")
+        br
+        p Details to be saved on server:					 
+        p!= "First Name: " +  name
+        p!= "Second Name: " + surname
+        p!= "E-mail: " + email
+        p!= "Message: " + message

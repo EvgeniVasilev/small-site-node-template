@@ -32,42 +32,23 @@ html
         div(class="container-fluid")
            h1: small Contacts Us Page		
            div(class="row")
-              form(class="form col-lg-5")
+              form(class="form col-lg-5" action="/send" method="post" validate enctype="application/x-www-form-urlencoded")
                   div(class="form-group")
                      label(class="label label-primary" for="f_name") First Name: 
                      p					 
-                     input(
-					 type="text"
-					 class="form-control"
-					 name="f_name"
-					 id="f_name"
-					 )
+                     input(type="text" class="form-control" name="f_name"  id="f_name" required)
                   div(class="form-group")
                      label(class="label label-primary" for="s_name") Second Name: 
                      p					 
-                     input(
-					 type="text"
-					 class="form-control"
-					 name="s_name"
-					 id="s_name"
-					 )
+                     input(type="text" class="form-control" name="s_name" id="s_name" required)
                   div(class="form-group")
                      label(class="label label-primary" for="email") E-mail: 
                      p					 
-                     input(
-					 type="email"
-					 class="form-control"
-					 name="email"
-					 id="email"
-					 )
+                     input(type="email" class="form-control" name="email" id="email" required)
                    div(class="form-group")
                       label(class="label label-primary" for="message") Message: 
                      p				   
-                      textarea(
-					  class="form-control"
-					  name="message"
-					  id="message"
-					  )
+                      textarea(class="form-control"  name="message" id="message" required)
                     div(class="form-group")
                        input(
 					   type="submit"
