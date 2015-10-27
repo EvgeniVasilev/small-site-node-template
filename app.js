@@ -47,12 +47,8 @@ app.post("/send", urlencodedParser, function (req, res) {
         "subject": 'Message from Customer Services',
         "content": req.body.f_name + "\n" + req.body.s_name + "\n" + req.body.email + "\n" + req.body.message,
     }, function (err, reply) {
-        if (!err) {
-            console.log("Cool");
-        } else {
-            console.log(err && err.stack);
-            console.dir(reply);
-        }
+        console.log(err && err.stack);
+        console.dir(reply);
     })
 })
 // error handling
