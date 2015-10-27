@@ -1,6 +1,7 @@
 /*global require, console, __dirname*/
 var express = require("express");
 var bodyParser = require("body-parser");
+var sendmail = require("sendmail");
 var app = express();
 
 // create application/x-www-form-urlencoded parser
@@ -38,6 +39,21 @@ app.get("/contacts", function (req, res) {
 app.post("/send", urlencodedParser, function (req, res) {
     "use strict";
     res.render("send", { name: req.body.f_name, surname: req.body.s_name, email: req.body.email, message: req.body.message });
+    // send mail to customer
+    // support service
+    sendmail({
+        "from": req.body.email,
+        "to": "evgenivasilev1209@abv.bg",
+        "subject": 'Message from Customer Services',
+        "content": req.body.f_name + "\n" + req.body.s_name + "\n" + req.body.email + "\n" + req.body.message,
+    }, function (err, reply) {
+        if (!err) {
+            console.log("Cool");
+        } else {
+            console.log(err && err.stack);
+            console.dir(reply);
+        }
+    })
 })
 // error handling
 app.use(function (err, req, res, next) {

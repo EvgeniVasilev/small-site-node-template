@@ -21,3 +21,8 @@ h1>small{
 	display: block;
 	margin: 0 0 45px 0;
 }
+
+.round{
+	padding: 10px 10px 5px 10px;
+	border-radius: 5px;
+}
